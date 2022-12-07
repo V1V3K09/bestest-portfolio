@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;1,200;1,800&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap");
+@keyframes slideinleft{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(0%);
+    }
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  animation: 3s ease-in 0s 1 slideinleft;
+
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  color: #000;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.profile {
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+    background-image: url(./images/);
+}
+
+.left {
+  text-align: left;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #c211e1;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about-col {
+  padding: 2rem;
+}
+
+.whatidorow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.whatidocol {
+  padding: 2rem;
+}
+
+.skillsrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+.skillscol {
+  padding: 2rem;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+input {
+  padding: 1rem;
+  width: 70%;
+  height: 10%;
+}
+
+.but {
+  margin-top: 3rem;
+}
+
+.gray {
+  color: #535353;
+}
+
+.whatidocol {
+  background-color: #fff;
+  width: 20%;
+}
+
+.gray-bg {
+  background-color: #fff;
+}
+.about-col img{
+    height: 100px;
+}
+@media screen and (max-width:1105px)
+{
+  .row
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .col
+  {
+    flex-basis: 10%;
+  }
+  .container{
+    height: auto;
+  }
+}
+
+@media screen and (max-width:390px) 
+{
+.container{
+  height: auto;
+}
+.heading{
+  size: 50px;
+}
+.about-row{
+  display: flex;
+}
+}
